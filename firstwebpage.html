@@ -6,12 +6,109 @@
         <meta name="description" content="This the my first webpage" />
         <link href="./external.css" rel="stylesheet" />
         <script src="./external.js"></script>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {  
+                background-color: antiquewhite;
+            }
+
+            /*
+            selector {
+                property: value;
+            }
+            */
+
+            #para {    
+                color: red;
+            }
+
+            .textbox {
+                border: 2px solid green;
+            }
+
+            input {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border: 5px solid green;
+            }
+
+            div#abc,div.abc {
+
+            }
+
+            table,th,td {
+                border: 2px solid red;
+            }
+
+            div {
+                border: 2px solid red;
+                margin: 10px;
+                padding: 10px;
+                background-color: antiquewhite;
+            }
+
+            #john div {
+                background-color: cornflowerblue;
+            }
+
+            #john>div {
+                background-color: cornflowerblue;
+            }
+
+            #lee+div {
+                background-color: cornflowerblue;
+            }
+
+            #bob~div {
+                background-color: cornflowerblue;
+            }
+
+            img[src="logo.gif"] {
+
+            }
+
+            ul {
+                display: flex; 
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            li {
+
+            }
+
+        </style>
     </head>
     <body>
         <!-- basic tags -->
-        <p><br />Hello <span style="color: red;">World</span></p>
-        <pre>Hello      World     
 
+        <div id="john">
+            <div id="sam">
+                <div id="lee"></div>
+                <div id="bob"></div>
+                <div id="ella"></div>
+                <div id="ella"></div>
+                <div id="ella"></div><div id="ella"></div>
+            </div>
+            <div id="rohan">
+                <div id="sal">
+                    <div id="kim"></div>
+                </div>
+                <div id="vik"></div>
+            </div>
+        </div>
+
+        <p id="para">Hello World</p>
+
+        <input class="textbox" type="text" name="name_inp" id="name_txt" value="Hello" />
+        <input class="textbox" type="url" placeholder="Enter a URL" required />
+        <input class="textbox" type="search" />
+
+
+        <pre>Hello      World     
 
 
             sadasdad
@@ -19,7 +116,7 @@
         <span>This is a span tag</span>
         <div>
             <span>
-                <div></div>
+                
             </span>
         </div>
         <hr/>
