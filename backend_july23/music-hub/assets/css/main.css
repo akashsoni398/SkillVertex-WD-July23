@@ -1,0 +1,148 @@
+
+* {
+    margin:0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(240, 237, 233);
+}
+
+/* header */
+header {
+    background-color: #222;
+    text-align: right;
+    width: 100%;
+}
+header>a {
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 12px;
+}
+header>div {
+    display: inline-block;
+}
+#cart>i {
+    color: white;
+    margin-right: 30px;
+    font-size: 15px;
+}
+#auth-btn {
+    background-color: green;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 30px;
+    font-weight: bold;
+    border: none;
+}
+#auth-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+}
+#auth-dropdown-content>a {
+    display: block;
+    background-color: rgb(178, 178, 178);
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    white-space:nowrap;
+}
+#auth-dropdown-content>a:hover {
+    background-color: rgb(138, 138, 138);
+}
+
+
+#auth-container:hover #auth-dropdown-content {
+    display: block;
+}
+
+/* branding */
+#branding {
+    position: relative;
+    background-color: #fcca16;
+    height: 150px;
+    z-index: -10;
+}
+.left-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.right-content {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+}
+
+#branding h1 {
+    position: absolute;
+    top: 5px;
+    left: 160px;
+    white-space: nowrap;
+    font-family: fantasy;
+    font-size: 75px;
+    font-weight: normal;
+}
+
+#branding p {
+    position: absolute;
+    top: 90px;
+    left: 160px;
+    white-space: nowrap;
+    font-size: 19.2px;
+    font-weight: normal;
+}
+
+#search-form {
+    position: relative;
+}
+
+#search-form input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 30px;
+    padding: 5px 25px 5px 5px;
+}
+#search-form button {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+/* navigation */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #333;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+/* Footer */
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+}
